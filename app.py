@@ -289,13 +289,13 @@ fig_rosca.update_layout(height=420)
 col_graf1, col_graf2, col_graf3 = st.columns([1, 1.2, 1])
 
 with col_graf1:
-    st.plotly_chart(fig_linha, use_container_width=True)
+    st.plotly_chart(fig_linha, width="stretch")
 
 with col_graf2:
-    st.plotly_chart(fig_barra, use_container_width=True)
+    st.plotly_chart(fig_barra, width="stretch")
 
 with col_graf3:
-    st.plotly_chart(fig_rosca, use_container_width=True)
+    st.plotly_chart(fig_rosca, width="stretch")
 
 
 # =========================
@@ -327,5 +327,5 @@ with st.expander("Tabela de Dados"):
             "Mês de referência": "Mês",
             "Nome da Forma de Abastecimento": "Forma de Abastecimento",
         },
-        use_container_width=True
+        width="stretch"
     )
